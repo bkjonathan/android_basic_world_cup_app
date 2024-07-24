@@ -30,21 +30,14 @@ class MainActivity : AppCompatActivity() {
 
     // Data Source
     fun generateData():ArrayList<CountryModel>{
-        var countryList = ArrayList<CountryModel>()
-        var country1: CountryModel = CountryModel("Brazil","5",R.drawable.brazil)
-        var country2: CountryModel = CountryModel("Germany","4",R.drawable.germany)
-        var country3: CountryModel = CountryModel("France","2",R.drawable.france)
-        var country4: CountryModel = CountryModel("Spain","1",R.drawable.spain)
-        var country5: CountryModel = CountryModel("England","1",R.drawable.uk)
-        var country6: CountryModel = CountryModel("US","0",R.drawable.us)
-        var country7: CountryModel = CountryModel("Qatar","0",R.drawable.qatar)
-        countryList.add(country1)
-        countryList.add(country2)
-        countryList.add(country3)
-        countryList.add(country4)
-        countryList.add(country5)
-        countryList.add(country6)
-        countryList.add(country7)
+        val countryList = ArrayList<CountryModel>()
+        countryList.add(CountryModel("Brazil","5",R.drawable.brazil))
+        countryList.add(CountryModel("Germany","4",R.drawable.germany))
+        countryList.add(CountryModel("France","2",R.drawable.france))
+        countryList.add(CountryModel("Spain","1",R.drawable.spain))
+        countryList.add(CountryModel("England","1",R.drawable.uk))
+        countryList.add(CountryModel("US","0",R.drawable.us))
+        countryList.add(CountryModel("Qatar","0",R.drawable.qatar))
         return countryList
     }
 }
